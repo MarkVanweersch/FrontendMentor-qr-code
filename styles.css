@@ -1,0 +1,73 @@
+/* .attribution { font-size: 11px; text-align: center; }
+
+.attribution a { color: hsl(228, 45%, 44%); } */
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+
+  --fs-paragraph: 15px;
+
+  --fw-normal: 400;
+  --fw-bold: 700;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Outfit', sans-serif;
+}
+
+body, 
+h1, 
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-light-gray);  
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 325px;
+  /* min width 350px of 100% voor smallere telefoons */
+  height: 500px;
+  padding: 1em;
+  background-color: var(--color-white);
+  border-radius: 1em;
+  box-shadow: 0 5px 20px 1px rgba(80, 80, 80, 0.1);
+}
+
+.qr-code {
+  width: 100%;
+  height: auto;
+  border-radius: 0.8em;
+}
+
+.text-container {
+  text-align: center;
+  padding: 0 0.9em;
+}
+
+.text-container h1 {
+  padding: 1em 0 0.8em;
+  color: var(--color-dark-blue);
+  font-size: 1.45em;
+}
+
+.text-container p {
+  font-size: var(--fs-paragraph);
+  color: var(--color-grayish-blue);
+}
